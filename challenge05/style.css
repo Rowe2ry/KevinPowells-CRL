@@ -32,8 +32,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2
-    rem;
+    font-size: 2.25rem;
 }
 
 .container {
@@ -104,4 +103,8 @@ h2 {
 .btn:hover,
 .btn:focus {
     opacity: .75; 
+}
+
+.color-text {
+    color: #136c72;
 }
