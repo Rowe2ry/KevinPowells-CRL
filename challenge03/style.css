@@ -1,0 +1,68 @@
+:root {
+    --background-color: #23424a;
+    --dark-text-color: #136c72;
+    --button-color: #38CFD9;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.background {
+    background-color: var(--background-color);
+    min-width: 100vw;
+    min-height: 70vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.text-content {
+    width: 60%;
+    max-width: 98ch;
+    margin-left: 4em;
+}
+
+.myTitle {
+    font-size: 3rem;
+    line-height: 4.5rem;
+    font-weight: 900;
+    margin-top: .375em;
+    margin-bottom: .375em;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 1.875rem;;
+}
+
+.pillButton {
+    background-color: var(--button-color);
+    color: var(--dark-text-color);
+    font-size: 1.3125rem;
+    padding: 1.375em;
+    font-weight: 700;
+    text-transform:uppercase;
+    border: none;
+    border-radius: 400em;
+    margin-top: 1.5em;
+    margin-bottom: 2.25em;
+}
+
+.pillButton:hover,
+.pillButton:focus-visible {
+    opacity: .75;
+};
