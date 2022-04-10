@@ -121,21 +121,15 @@ p + p {
         flex-direction: column;
     }
 
-    .col {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .col + .col {
-        margin-left: 0;
-    }
-
-    p + p {
-        margin-left: 0;
-    }
-
+    .col,
     .three-tier p {
         width: 100%;
+        margin-left: 0;
+    }
+
+    .col + .col,
+    p + p {
+        margin-left: 0;
     }
 
     #last__row {
