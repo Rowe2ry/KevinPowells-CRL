@@ -1,0 +1,144 @@
+/* font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif; */
+
+:root {
+    --headingFonts: 'Playfair Display', serif;
+    --bodyFonts: 'Roboto', sans-serif;
+    --creamPuff: #f3eed9;
+    --ironRust: #824936;
+    --deepForest: #222c2a;
+    font-size: 16px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    border: none;
+}
+
+header {
+    width: 100%;
+    min-height: 41.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--creamPuff);
+}
+
+.title {
+    width: 65%;
+    max-width: 70.5rem;
+    text-align: center;
+}
+
+.intro__tag {
+    text-transform: uppercase;
+    font-family: var(--bodyFonts);
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: var(--headingFonts);
+    font-size: 3.25rem;
+    color: var(--ironRust);
+    margin: 0 auto;
+}
+
+.container {
+    margin: 0 auto;
+    width: 85%;
+    max-width: 70.5rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.three-tier {
+    flex-wrap: wrap;
+    padding: 1.75em 1rem;
+}
+
+.subheading {
+    font-size: 2.25rem;
+}
+
+.three-tier h2 {
+    color: var(--ironRust);
+    text-align: center;
+    width: 100%;
+}
+
+.three-tier p {
+    padding: .5em;
+    font-family: var(--bodyFonts);
+    font-size: 1.125rem;
+    font-weight: 300;
+    width: calc(50% - 1.75em);
+}
+
+p + p {
+    margin-left: 1.25em;
+}
+
+.navy {
+    background-color: var(--deepForest);
+    padding: 1.75em 1rem;
+}
+
+.rust {
+    background-color: var(--ironRust);
+    padding: 1.75em 1rem;
+}
+
+.col {
+    width: calc(50% - 1.75em);
+}
+
+.col + .col {
+    margin-left: 1.25em;
+}
+
+.cream {
+    color: var(--creamPuff);
+}
+
+.white__text {
+    color: #fff;
+}
+
+@media screen and (max-width: 550px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .col + .col {
+        margin-left: 0;
+    }
+
+    p + p {
+        margin-left: 0;
+    }
+
+    .three-tier p {
+        width: 100%;
+    }
+
+    #last__row {
+        flex-direction: column-reverse;
+    }
+}
